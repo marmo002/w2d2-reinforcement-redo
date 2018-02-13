@@ -1,6 +1,6 @@
 documentary = "The Great Lions"
-drama = "Sister's Keeper"
-comedy = "Just or laugh"
+drama = "My Sister's Keeper"
+comedy = "Just for laughs"
 dramedy = "Click"
 
 puts "Do you like a good documentary"
@@ -13,13 +13,13 @@ puts "Do you preferred a comedy"
 anwser3 = gets.chomp.downcase
 
 if anwser1 == "yes"
-  "You should watch #{documentary}"
+  puts "You should watch \"#{documentary}\""
 elsif anwser1 == "no" && ( anwser2 == "yes" && anwser3 == "yes")
-  "You should watch #{dramady}"
+  puts "You should watch \"#{dramedy}\""
 elsif anwser2 == "yes" && (anwser1 == "no" && anwser3 == "no")
-  "You should watch #{drama}"
+  puts "You should watch \"#{drama}\""
 elsif anwser3 == "yes" && (anwser1 == "no" && anwser2 == "no")
-  "You should watch #{comedy}"
+  puts "You should watch \"#{comedy}\""
 else
-  "You should read a book"
+  puts "You should read a book!!!!"
 end
